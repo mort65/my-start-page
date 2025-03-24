@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+</head>
+<body>
+    <!--<h1 class="title"> Start Page </h1>-->
+    <p id="clock" class="title"></p>
+    <div class="container">
+        <div class="search">
+            <div class="search-type">
+                <input type="radio" id="bing" name="engine" value="bing" onclick="changeEngine()">
+                <label for="bing">Bing</label>
+                <input type="radio" id="brave" name="engine" value="brave" onclick="changeEngine()">
+                <label for="brave">Brave</label>
+                <input type="radio" id="ddg" name="engine" value="duckduckgo" onclick="changeEngine()">
+                <label for="ddg">DuckDuckGo</label>
+                <input type="radio" id="google" name="engine" value="google" onclick="changeEngine()">
+                <label for="google">Google</label>
+                <input type="radio" id="yandex" name="engine" value="yandex" onclick="changeEngine()" checked>
+                <label for="yandex">Yandex</label>
+            </div>
+            <div class="search-box">
+                <input type="text" name="q" placeholder="Search the web"
+                class="search-input" id="query" autocomplete="off">
+                <input type="submit" value="Search" class="search-button" onclick="search()">
+            </div>
+        </div>
+        <div class="links">
+            <div class="link-row">
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="link">YouTube
+                    <img src="img/youtube.png" alt="youtube logo" class="link-img">
+                </a>
+                <a href="https://discord.com/channels/@me" target="_blank" rel="noopener noreferrer" class="link">Discord
+                    <img src="img/discord.png" alt="discord logo" class="link-img">
+                </a>
+                <!-- <a href="https://www.xiaohongshu.com/explore" target="_blank" rel="noopener noreferrer" class="link">Xiaohongshu
+                    <img src="img/xiaohongshu.png" alt="xiaohongshu logo" class="link-img">
+                </a> -->
+                <a href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer" class="link">Telegram
+                    <img src="img/telegram.png" alt="telegram logo" class="link-img">
+                </a>
+            </div>
+            <div class="link-row">
+                <a href="https://translate.google.com" target="_blank" rel="noopener noreferrer" class="link">Google Translate
+                    <img src="img/google-translate.png" alt="google translate logo" class="link-img">
+                </a>
+                <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" class="link">Stack Overflow
+                    <img src="img/stack-overflow.png" alt="stack overflow logo" class="link-img">
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link">GitHub
+                    <img src="img/github.png" alt="github logo" class="link-img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Include JavaScript at the end of the body -->
+    <script src="script.js"></script>
+</body>
+</html>
+
